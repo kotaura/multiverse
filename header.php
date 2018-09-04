@@ -16,7 +16,13 @@
 	<meta charset="<?php bloginfo( 'charset' ); ?>">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link rel="profile" href="http://gmpg.org/xfn/11">
-
+	<!-- Scripts -->
+		<script src="<?php echo get_template_directory_uri(); ?>/js/jquery.min.js"></script>
+		<script src="<?php echo get_template_directory_uri(); ?>/js/jquery.poptrox.min.js"></script>
+		<script src="<?php echo get_template_directory_uri(); ?>/js/skel.min.js"></script>
+		<script src="<?php echo get_template_directory_uri(); ?>/js/util.js"></script>
+		<!--[if lte IE 8]><script src="assets/js/ie/respond.min.js"></script><![endif]-->
+		<script src="<?php echo get_template_directory_uri(); ?>/js/main.js"></script>
 	<?php wp_head(); ?>
 </head>
 
@@ -35,7 +41,7 @@
 			</a>
 		<?php endif; ?>
 		<p class="site-description"><?php echo get_bloginfo( 'description' ); ?></p>
-	
+
 		<nav id="site-navigation" class="main-navigation">
 			<?php
 				wp_nav_menu( array(

@@ -43,7 +43,7 @@ Nicolas Gallagher and Jonathan Neal http://necolas.github.io/normalize.css/
 	## Galleries
 --------------------------------------------------------------*/
 
-@import url('https://fonts.googleapis.com/css?family=Source+Sans+Pro');
+@import url("https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,300italic,400,400italic");
 
 /*--------------------------------------------------------------
 # Normalize
@@ -106,7 +106,7 @@ abbr[title] {
 
 b,
 strong {
-	font-weight: bold;
+	/* font-weight: bold; */
 }
 
 dfn {
@@ -114,8 +114,12 @@ dfn {
 }
 
 h1 {
-	font-size: 2em;
-	margin: 0.67em 0;
+	color: #ffffff;
+	font-weight: 300;
+	letter-spacing: 0.1em;
+	line-height: 1.5;
+	margin: 0 0 1em 0;
+	text-transform: uppercase;
 }
 
 mark {
@@ -268,11 +272,12 @@ input,
 select,
 optgroup,
 textarea {
-	color: #404040;
-	font-family: "Source Sans Pro", sans-serif;
-	font-size: 16px;
-	font-size: 1rem;
-	line-height: 1.6;
+	color: #a0a0a1;
+	font-family: "Source Sans Pro", Helvetica, sans-serif;
+	font-size: 15pt;
+	font-weight: 300;
+	letter-spacing: 0.025em;
+	line-height: 1.65;
 }
 
 h1,
@@ -282,6 +287,7 @@ h4,
 h5,
 h6 {
 	clear: both;
+	font-family: "Source Sans Pro", Helvetica, sans-serif;
 }
 
 p {
@@ -434,7 +440,7 @@ input[type="submit"] {
 	line-height: 2;
 	padding: .6em 1em .4em;
 	text-transform: uppercase;
-	font-weight: bold;
+	/* font-weight: bold; */
 }
 
 button:hover,
@@ -671,7 +677,7 @@ a:active {
 	display: block;
 	font-size: 14px;
 	font-size: 0.875rem;
-	font-weight: bold;
+	/* font-weight: bold; */
 	height: auto;
 	left: 5px;
 	line-height: normal;
@@ -924,14 +930,14 @@ object {
 	text-transform: uppercase;
 	display: inline-block;
 	line-height: 3em;
-	font-weight: bold;
+	font-family: "Source Sans Pro", Helvetica, sans-serif;
 }
 
 .main-navigation {
 	position: absolute;
 	right: 1.2em;
 	line-height: 2.3em;
-	display: inline-block;
+	display: none;
 }
 
 .main-navigation li a {
@@ -976,13 +982,18 @@ object {
 #main .post h2.entry-title a {
 	text-decoration: none;
 	color: rgba(255, 255, 255, 0.8);
+	font-family: "Source Sans Pro", Helvetica, sans-serif;
+	font-weight: initial;
 }
 
 
 h1.entry-title, h1.page-title {
-	text-align: center;
-	margin: 50px;
-	
+	color: #ffffff;
+	font-weight: 300;
+	letter-spacing: 0.1em;
+	line-height: 1.5;
+	margin: 0 0 1em 0;
+	text-transform: uppercase;
 }
 
 
@@ -1079,12 +1090,12 @@ p.form-submit {
 		float: left;
 		width: 50%;
 	}
-	
+
 	.site-header {
 		line-height: 3em;
 		width: 100%;
 	}
-	
+
 	.home .site-header {
 		position: fixed;
 		bottom: 0;
@@ -1092,22 +1103,23 @@ p.form-submit {
 		width: 100%;
 		z-index: 2;
 	}
-	
+
 	.main-navigation {
 		line-height: 4em;
 	}
-	
-	
+
+
 	.sidebar-container .widget-area {
 		width: 50%;
 		float: left;
 		display: inline-block;
 	}
-	
+
 	.site-title, .site-description, .main-navigation li a {
-		font-size: 20px;
+		font-size: 16px;
+		font-family: "Source Sans Pro", Helvetica, sans-serif;
 	}
-	
+
 	#fp-footer {
 		display: block;
 		width: 100%;
@@ -1125,16 +1137,12 @@ p.form-submit {
 	.site-description {
 		display: inline-block;
 	}
-	
+
 	.main-navigation {
 		line-height: 4em;
 	}
-	
-	.site-header {
-		line-height: 4em;
-	}
-	
-	
+
+
 	#fp-footer {
 		height: 4.9em;
 	}
