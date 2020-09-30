@@ -19,7 +19,8 @@ if ( post_password_required() ) {
 	return;
 }
 ?>
-
+		<hr />
+		
 <section id="comments-container">
 	<div id="comments" class="comments-area">
 
