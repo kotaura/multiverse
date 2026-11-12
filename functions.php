@@ -130,7 +130,7 @@ add_action( 'widgets_init', 'multiverse_widgets_init' );
  * Enqueue scripts and styles.
  */
 function multiverse_scripts() {
-	wp_enqueue_style( 'multiverse-style', get_stylesheet_uri() );
+	wp_enqueue_style( 'multiverse-style', get_stylesheet_uri(), array(), wp_get_theme()->get( 'Version' ) );
 
 	wp_enqueue_script( 'multiverse-navigation', get_template_directory_uri() . '/js/navigation.js', array(), '20151215', true );
 

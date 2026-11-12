@@ -14,7 +14,7 @@
 		<?php
 			if ( ( is_front_page() && is_home() ) || is_archive() ) {
 		?>
-			<a href="<?php esc_url( the_permalink() ) ?>"><?php the_post_thumbnail( 'fp-grid' ); ?></a>
+			<?php the_post_thumbnail( 'fp-grid' ); ?>
 		<?php
 			}
 			else {
@@ -40,7 +40,7 @@
 	<?php
         }
         else {
-			the_title( '<h2 class="entry-title"><a href="' . esc_url( get_permalink() ) . '" rel="bookmark">', '</a></h2>' );
+			the_title( '<h2 class="entry-title">', '</h2>' );
 			//the_excerpt();
 		}
 	?>
