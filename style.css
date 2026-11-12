@@ -1153,7 +1153,7 @@ p.form-submit {
 }
 
 /*--------------------------------------------------------------
-## Mahito tile wall (front page) — added 2026-11-12
+## Photo tile wall (front page)
 --------------------------------------------------------------*/
 .mv-wall {
 	display: grid;
@@ -1225,7 +1225,7 @@ p.form-submit {
 }
 
 /*--------------------------------------------------------------
-## Mahito tile wall refinements — 2026-11-12
+## Photo tile wall refinements
    Fit exactly one screen (no scrolling) + subtle hover zoom.
 --------------------------------------------------------------*/
 body.home #page {
@@ -1278,7 +1278,7 @@ body.home #main.site-main {
 }
 
 /*--------------------------------------------------------------
-## Mahito tile wall — bigger photos, edge-to-edge (2026-11-12)
+## Photo tile wall — bigger photos, edge-to-edge
    Free height (scrolling is fine), square tiles again, and no
    outer margins: the wall runs edge to edge, keeping only the
    thin gaps between tiles as frames.
@@ -1318,7 +1318,7 @@ body.home #main.site-main {
 }
 
 /*--------------------------------------------------------------
-## Mahito tile wall — full-screen stage (2026-11-12)
+## Photo tile wall — full-screen stage
    The home page is a fixed full-viewport stage: the page itself
    never scrolls, there is no visible scrollbar, and the tile
    wall is clipped at the screen edges (tiles may be cut off).
@@ -1377,7 +1377,7 @@ body.home #main.site-main {
 }
 
 /*--------------------------------------------------------------
-## Mahito tile wall — columns per device (2026-11-12)
+## Photo tile wall — columns per device
    iPhone: 1 across / iPad mini & tablets: 2 across / PC: 4 across
 --------------------------------------------------------------*/
 @media screen and (max-width: 1200px) {
@@ -1393,7 +1393,7 @@ body.home #main.site-main {
 }
 
 /*--------------------------------------------------------------
-## Mahito tile wall — fixed tile height (2026-11-12)
+## Photo tile wall — fixed tile height
    Safari compresses aspect-ratio grid rows to fit a fixed-height
    wall, squashing tiles into thin strips. Fix: size every row
    explicitly from the viewport width, so tiles are always true
@@ -1430,8 +1430,8 @@ body.home #main.site-main {
 }
 
 /*--------------------------------------------------------------
-## Mahito tile wall — scrollable wall, invisible scrollbar
-   (2026-11-12) The page stays a fixed stage, but the wall
+## Photo tile wall — scrollable wall, invisible scrollbar
+   The page stays a fixed stage, but the wall
    itself scrolls vertically; its scrollbar is hidden.
 --------------------------------------------------------------*/
 .mv-wall {
@@ -1449,8 +1449,8 @@ body.home #main.site-main {
 }
 
 /*--------------------------------------------------------------
-## Mahito tile wall — no scrolling at all (2026-11-12)
-   User's final call: nothing scrolls. The wall spans the full
+## Photo tile wall — no scrolling at all
+   Nothing scrolls. The wall spans the full
    viewport including behind the fixed bottom footer bar; the
    bottom row is simply cut off where it meets the bar.
 --------------------------------------------------------------*/
